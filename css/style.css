@@ -1,0 +1,81 @@
+/* Universal Style */
+/* ? The main note in this project is use visibilty instead of display : none */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  position: relative;
+  height: 100vh;
+  background-image: url(../images/macos-ventura-macos-13-macos-2022-stock-dark-mode-5k-retina-6016x6016-8133.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* contextmenu  */
+.contextmenu {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.13) , 0 0 1rem rgba(255,255,255,0.15);
+  border-radius: 0.8rem;
+  padding: 1rem 0;
+  position: fixed;
+  visibility: hidden;
+  transform: scale(0);
+  transition: all 250ms;
+  background-color: rgba(255, 255, 255, 0.434);
+  backdrop-filter: blur(3rem);
+}
+
+.menu-item {
+}
+
+.menu-item__link {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 0.8rem;
+  text-transform: capitalize;
+  transition: all 180ms;
+}
+
+.menu-item__link:hover {
+  background-color: #eeeeeeb3;
+  color: purple;
+}
+
+.menu-item__icon {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+}
+
+.menu-item__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.menu-item__link span {
+  font-size: 1.4rem;
+}
+
+
